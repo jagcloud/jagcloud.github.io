@@ -1,6 +1,286 @@
-<html>
-    <h1>
-        username's Portfolio
-    </h1>
-    <img src="photofile.jpg" /> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vee's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Fruktur&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  * {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+  </style>
+</head>
+<body>
+
+<div class="p-5 bg-primary text-white text-center">
+  <h1 style="font-family: 'Fruktur', cursive; font-size: 3em">Jim Genna </h1>
+  <p style="font-family: 'Zen Kurenaido', sans-serif; font-size: 2em">Dream as if you’ll live forever. Live as if you’ll die today. - James Dean</p>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Bio.html">Bio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- The About Section -->
+<section class="about-section" id="about">
+<div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>About Jim</b></h1>
+        <h1 class="medium-font" style="color:MediumSeaGreen;"><b>Software & Infrastructure Engineer</b></h1>
+        <p> I love programming and have used my skills to create new products and simplify processes through automation. I have built web portals at my current job to brand and market products, and in turn increase customer engagement and inspire them.</p>
+        <h2>
+            <a href="https://www.linkedin.com/in/veena-puttalingaiah-19115216"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:jim.jagcloud.github@zzring.com"><i class="bi bi-envelope"></i></a>
+            <a href="https://jagcloud.github.io/"><i class="bi bi-github"></i></a>
+        </h2>
+      </div>
+      <div class="column-33">
+          <img src="photofile.jpg" width="250" height="330">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Bio Section -->
+  <div class="container" style="background-color:#f1f1f1">
+    <div class="row">
+       <h1 class="xlarge-font"><b>Bio</b></h1>
+        <p>I am a highly motivated Mainframe Specialist with 17+ years of experience in Devops, Application development, Database Administration, Infrastructure Engineering and Operations. A continuous learner who is passionate and committed to the organizational growth and focused on delivering exceptional results. </p>
+        <a href="Bio.html"><button class="button" style="background-color:red"> Read More </button></a>
+    </div>
+  </div>
+  
+  <!-- The Projects Section -->
+<section class="projects-section" id="projects">
+  <div class="container">
+    <div class="row">
+      <div>
+        <h1 class="xlarge-font"><b>Projects</b></h1><br>
+            <div class="row row-cols-1 row-cols-md-4 mb-4 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">Bouncing Ball</h4>
+                      </div>
+                      <div class="card-body">
+                        <p>The ball bounces and changes direction at the boundaries.  </p>
+                        <a target="_blank" href="https://github.com/Akankshvee/BounceBall"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/BounceBall/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                      </div>
+                    </div>
+                  </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">PacMan Exercise</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>PacMan moves from one edge of the page to another. </p>
+                    <a target="_blank" href="https://github.com/Akankshvee/PacMan"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/PacMan/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">Eye Exercise</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>Eye exercise shows eye balls moving with the mouse. </p>
+                    <a target="_blank" href="https://github.com/Akankshvee/EyeExercise"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/EyeExercise/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">Bus Tracker</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>Tracks buses in real time for a given location.</p>
+                    <a target="_blank" href="https://github.com/Akankshvee/BusTracker"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/BusTracker/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">Todo App</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>Track your to-do list every day using the Todo App.</p>
+                    <a target="_blank" href="https://github.com/Akankshvee/TodoApp"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/TodoApp/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">ATM Machine</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>ATM app to check balance, deposit and withdraw money.</p>
+                    <a target="_blank" href="https://github.com/Akankshvee/ATMMachine"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/ATMMachine/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">Read Poems</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>Find & read your favorite poems by author.</p>
+                    <a target="_blank" href="https://github.com/Akankshvee/FetchPoems"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/FetchPoems/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">Tic Tac Toe</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>Find a partner and enjoy the Tic-Tac-Toe game.</p>
+                    <a target="_blank" href="https://github.com/Akankshvee/TicTacToe"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/TicTacToe/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">Shopping Cart</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>This is a demo application for shopping cart.</p>
+                    <a target="_blank" href="https://github.com/Akankshvee/shoppingcart"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="https://akankshvee.github.io/shoppingcart/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-white bg-primary border-primary">
+                    <h4 class="my-0 fw-normal" style="font-family: 'Ceviche One', cursive; font-size: 2em;">Bad Bank</h4>
+                  </div>
+                  <div class="card-body">
+                    <p>Bad bank demonstrates usage of react, express, mongo.</p>
+                    <a target="_blank" href="https://github.com/Akankshvee/Bad-Bank"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Git Repo</button></a>
+                        <p></p>
+                        <a target="_blank" href="http://veena-puttafullstackbankingapp.herokuapp.com/"><button type="button" class="w-100 btn btn-lg btn-outline-primary">Live Project</button></a>
+                  </div>
+                </div>
+              </div>
+            
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mt-5 p-4 bg-dark text-white text-center"> 
+</div>
+
+</body>
 </html>
